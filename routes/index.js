@@ -45,6 +45,10 @@ router.get("/logout", function(req, res) {
    res.redirect("/campgrounds");
 });
 
+// router.get("/*", function(req, res) {
+//     res.render("notfound");
+// });
+
 //function define
 
 module.exports = router;
