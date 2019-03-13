@@ -13,3 +13,9 @@
 .delete-form {
     display: inline;
 }
+
+#loginForm {
+    text-align: center;
+    width: 30%;
+    margin: 30px auto;
+}

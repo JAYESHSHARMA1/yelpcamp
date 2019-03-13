@@ -15,7 +15,12 @@ var express     = require("express"),
  campgroundRoutes   = require("./routes/campgrounds"),
  indexRoutes        = require("./routes/index");
  
-mongoose.connect(process.env.DATABASEURL);
+ var dbURL = '"mongodb://localhost:27017/yelp_camp_v3", { useNewUrlParser: true }';
+ 
+ var url = process.env.DATABASEURL || dbURL
+ mongoose.connect(url);
+ 
+// mongoose.connect();
 // mongodb+srv://jay123:<password>@yccluster-oyz3a.mongodb.net/test?retryWrites=true
 // mongoose.connect("mongodb+srv://jay123:jayesh1234@yccluster-oyz3a.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
 // mongoose.connect("mongodb://localhost:27017/yelp_camp_v3", { useNewUrlParser: true });
