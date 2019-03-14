@@ -20,10 +20,7 @@ var express     = require("express"),
  var url = process.env.DATABASEURL || dbURL
  mongoose.connect(url);
  
-// mongoose.connect();
-// mongodb+srv://jay123:<password>@yccluster-oyz3a.mongodb.net/test?retryWrites=true
-// mongoose.connect("mongodb+srv://jay123:jayesh1234@yccluster-oyz3a.mongodb.net/test?retryWrites=true", { useNewUrlParser: true });
-// mongoose.connect("mongodb://localhost:27017/yelp_camp_v3", { useNewUrlParser: true });
+
 
 app.use(bodyParser.urlencoded({extended: true}));
 app.set("view engine", "ejs");
